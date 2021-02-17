@@ -15,27 +15,27 @@ public class HumanResourcesTest {
 
     public static void main(String[] args) {
         Job job = new Job();
-        job.id = 1;
-        job.title = "Java Programmer";
-        job.minSalary = 10_000;
-        job.maxSalary = 20_000;
+        job.setId(1);
+        job.setTitle("Java Programmer");
+        job.setMinSalary(10_000);
+        job.setMaxSalary(20_000);
 
         Department department = new Department();
-        department.id = 1;
-        department.location = "Ecuador";
-        department.title = "Technology Information";
+        department.setId(1);
+        department.setLocation("Ecuador");
+        department.setTitle("Technology Information");
 
         Employee employee = new Employee();
-        employee.id = 1;
-        employee.firstName = "Edgar";
-        employee.lastName = "Gomez";
-        employee.age = -1;
-        employee.email = "egomez@hittechs.com.mx";
-        employee.phoneNumber = "123.456.7890";
-        employee.salary = 4_500.25;
-        employee.hireDate = LocalDate.of(2017, Month.FEBRUARY, 11);
-        employee.department = department;
-        employee.job = job;
+        employee.setId(1);
+        employee.setFirstName("Edgar");
+        employee.setLastName("Gomez");
+        employee.setAge(27);
+        employee.setEmail("egomez@hittechs.com.mx");
+        employee.setPhoneNumber("123.456.7890");
+        employee.setSalary(4_500.25);
+        employee.setHireDate(LocalDate.of(2017, Month.FEBRUARY, 11));
+        employee.setDepartment(department);
+        employee.setJob(job);
 
         employee.getDetails();
     }
