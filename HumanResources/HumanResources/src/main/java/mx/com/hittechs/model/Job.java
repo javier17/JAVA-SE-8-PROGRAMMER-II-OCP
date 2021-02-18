@@ -58,5 +58,10 @@ public class Job {
         System.out.println("Minimum Salary: $" + minSalary);
         System.out.println("Maximum Salary: $" + maxSalary);
     }
-     
+
+    @Override
+    public String toString() {
+        return "Job{" + "id=" + id + ", title=" + title + ", minSalary=" + minSalary + ", maxSalary=" + maxSalary + '}';
+    }
+       
 }

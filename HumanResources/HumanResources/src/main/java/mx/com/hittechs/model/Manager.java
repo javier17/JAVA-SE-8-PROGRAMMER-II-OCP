@@ -27,5 +27,10 @@ public class Manager extends Employee {
     public void setSecretary(Employee secretary) {
         this.secretary = secretary;
     }
+    
+    @Override
+    public void getDetails() {
+        
+    }
 
 }
