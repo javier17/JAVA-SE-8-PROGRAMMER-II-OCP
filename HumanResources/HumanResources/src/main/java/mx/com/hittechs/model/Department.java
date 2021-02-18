@@ -11,6 +11,13 @@ public class Department {
     private String title;
     private String location;
 
+    public Department() {
+    }
+
+    public Department(String title) {
+        this.title = title;
+    }
+
     public int getId() {
         return id;
     }
