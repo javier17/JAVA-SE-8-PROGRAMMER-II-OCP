@@ -5,6 +5,13 @@ package mx.com.hittechs.animals;
  * @web www.hittechs.com.mx
  * @mail contacto@hittechs.com.mx
  */
-public class Cat {
+public class Cat extends Animal{
+
+    @Override
+    public void eat() {
+        System.out.println("Cat.eat()");
+    }
+    
+    
 
 }
