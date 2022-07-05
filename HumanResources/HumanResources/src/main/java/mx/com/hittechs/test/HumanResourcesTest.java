@@ -5,6 +5,7 @@ import java.time.Month;
 import mx.com.hittechs.model.Department;
 import mx.com.hittechs.model.Employee;
 import mx.com.hittechs.model.Job;
+import mx.com.hittechs.model.Manager;
 
 /**
  * @author Hittechs Training & Consulting
@@ -36,7 +37,21 @@ public class HumanResourcesTest {
         employee.setHireDate(LocalDate.of(2017, Month.FEBRUARY, 11));
         employee.setDepartment(department);
         employee.setJob(job);
+        
+        Manager manager = new Manager();
+        manager.setId(1);
+        manager.setFirstName("Jhon");
+        manager.setLastName("Doe");
+        manager.setAge(55);
+        manager.setEmail("jdoe@hittechts.com.mx");
+        manager.setPhoneNumber("777.888.9999");
+        manager.setSalary(47_421.77);
+        manager.setHireDate(LocalDate.of(2018, Month.JANUARY, 1));
+        manager.setDepartment(department);
+        manager.setSecretary(employee);
 
         employee.getDetails();
+        System.out.println("--------------------------------------------");
+        manager.getDetails();
     }
 }
