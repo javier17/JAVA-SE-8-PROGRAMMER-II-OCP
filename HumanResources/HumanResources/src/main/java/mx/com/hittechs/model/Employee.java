@@ -130,4 +130,9 @@ public class Employee {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", email=" + email + ", phoneNumber=" + phoneNumber + ", salary=" + salary + ", hireDate=" + hireDate + ", department=" + department + ", job=" + job + '}';
+    }
+
 }

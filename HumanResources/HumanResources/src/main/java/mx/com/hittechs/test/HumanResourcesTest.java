@@ -35,7 +35,7 @@ public class HumanResourcesTest {
         employee.setJob(job);
         
         Manager manager = new Manager("Jhon", "Doe");
-        manager.setId(1);
+        manager.setId(2);
         manager.setAge(55);
         manager.setEmail("jdoe@hittechts.com.mx");
         manager.setPhoneNumber("777.888.9999");
@@ -44,8 +44,8 @@ public class HumanResourcesTest {
         manager.setDepartment(department);
         manager.setSecretary(employee);
 
-        employee.getDetails();
+        System.out.println(employee);
         System.out.println("--------------------------------------------");
-        manager.getDetails();
+        System.out.println(manager);
     }
 }

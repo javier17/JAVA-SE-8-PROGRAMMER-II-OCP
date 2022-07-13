@@ -47,4 +47,9 @@ public class Department {
         System.out.println("Title: " + title);
         System.out.println("Location: " + location);
     }
+
+    @Override
+    public String toString() {
+        return "Department{" + "id=" + id + ", title=" + title + ", location=" + location + '}';
+    } 
 }
