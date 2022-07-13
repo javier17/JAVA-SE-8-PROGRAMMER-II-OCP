@@ -12,6 +12,13 @@ public class Job {
     private double minSalary;
     private double maxSalary;
 
+    public Job() {
+    }
+ 
+    public Job(String title) {
+        this.title = title;
+    }
+
     public int getId() {
         return id;
     }

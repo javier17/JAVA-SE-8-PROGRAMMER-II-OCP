@@ -15,21 +15,17 @@ import mx.com.hittechs.model.Manager;
 public class HumanResourcesTest {
 
     public static void main(String[] args) {
-        Job job = new Job();
+        Job job = new Job("Java Programmer");
         job.setId(1);
-        job.setTitle("Java Programmer");
         job.setMinSalary(10_000);
         job.setMaxSalary(20_000);
 
-        Department department = new Department();
+        Department department = new Department("Technology Information");
         department.setId(1);
         department.setLocation("Ecuador");
-        department.setTitle("Technology Information");
 
-        Employee employee = new Employee();
+        Employee employee = new Employee("Edgar", "Gomez");
         employee.setId(1);
-        employee.setFirstName("Edgar");
-        employee.setLastName("Gomez");
         employee.setAge(27);
         employee.setEmail("egomez@hittechs.com.mx");
         employee.setPhoneNumber("123.456.7890");
