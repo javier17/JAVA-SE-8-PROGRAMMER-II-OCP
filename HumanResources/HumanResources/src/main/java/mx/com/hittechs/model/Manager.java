@@ -13,6 +13,13 @@ public class Manager extends Employee {
 
     private Employee secretary;
 
+    public Manager() {
+    }
+
+    public Manager(String firstName, String lastName) {
+        super(firstName, lastName);
+    }
+    
     public Employee getSecretary() {
         return secretary;
     }

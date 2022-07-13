@@ -34,10 +34,8 @@ public class HumanResourcesTest {
         employee.setDepartment(department);
         employee.setJob(job);
         
-        Manager manager = new Manager();
+        Manager manager = new Manager("Jhon", "Doe");
         manager.setId(1);
-        manager.setFirstName("Jhon");
-        manager.setLastName("Doe");
         manager.setAge(55);
         manager.setEmail("jdoe@hittechts.com.mx");
         manager.setPhoneNumber("777.888.9999");
